@@ -27,6 +27,9 @@ var cardsInPlay = [];
 
 var scoreIncrementer = 1;
 
+var sumTotal = 1;
+
+
 //function to check if the identities of the cards match
 
 var checkForMatch = function () {
@@ -34,8 +37,12 @@ var checkForMatch = function () {
 	if (cardsInPlay[0] === cardsInPlay[1]) {
 			alert("You found a match!");
 			document.getElementById('scoreNumber').innerHTML = scoreIncrementer++;
+			document.getElementById('totalNumber').innerHTML = 
+				sumTotal++
 		} else {
 			alert("Sorry, try again.")
+			document.getElementById('totalNumber').innerHTML = 
+				sumTotal++
 		}
 }
 
@@ -86,7 +93,7 @@ var resetBoard = function () {
 		resetButton.addEventListener('click', flipCardBack);
 }
 
-
+//call both functions at the end of the code to make the card images appear and activate the reset button
 
 
 resetBoard();
