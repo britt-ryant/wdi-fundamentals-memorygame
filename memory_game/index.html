@@ -1,11 +1,17 @@
+
+<!--This is the index.html sheet for Ryan Britt's memory game -->
+
+
 <!DOCTYPE html>
 <html>
 <head>
+	<!--links to both the .css file for the memorygame page and the fonts used in the .css file -->
 	<title>Memory Card Game</title>
 	<link href="CSS/style.css" rel="stylesheet" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Droid+Serif|Raleway:400,500,600,700" rel="stylesheet">
 </head>
 <body>
+	<!-- Main style used for the page -->
 	<header>
 	<h1>Memory Game</h1>
 	</header>
@@ -21,16 +27,18 @@
 	<h3>Find me on <a href="https://www.facebook.com/profile.php?id=100007001626939" id="facebookLink">Facebook</a> to learn more about myself!</h3>
 	</section>
 	<section id="game">
-	<div>
-		<img src="images/back.png" alt="Queen of Diamonds">
-		<img src="images/back.png" alt="Queen of Hearts">
-		<img src="images/back.png" alt="King of Diamonds">
-		<img src="images/back.png" alt="King of Hearts">
-	</div>
+	<div id="game-board" class="boardclearfix"></div>
 	</section>
+	<div>
+		<h3>Score: </h3><h3 id="scoreNumber"></h3>
+	</div>
+
+	<button id="reset">Reset</button>
 	</main>
 	<footer class="clearfix"> 
 		<p class="copyright">Copyright 2017</p>
 		<p class="message">Created with &hearts; by <span class="name">GA</span></p>
+
+<!--Link to the JS file that the memorygame page uses -->
 <script type="text/javascript" src="js/main.js"></script></body>
 </html>

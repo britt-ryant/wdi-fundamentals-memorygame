@@ -1,3 +1,6 @@
+
+/* Stylesheet for the entire memory game page */
+
 body {
 	text-align: center;
 	margin: 0;
@@ -76,6 +79,8 @@ footer {
 	letter-spacing: .08em;
 	font-weight: 500;
 }
+
+/* styling for the footer on the page */
 
 .copyright {
 	float: left;
